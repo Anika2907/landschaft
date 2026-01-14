@@ -3,8 +3,25 @@ namespace myImages {
 
     helpers._registerFactory("image", function(name: string) {
         switch(helpers.stringTrim(name)) {
+            case "image7":
+            case "Blume":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . d d d . . . . . . . 
+. . . . . d d 4 4 d . . . . . . 
+. . . . d d 4 4 4 4 d . . . . . 
+. . . . d d 4 4 4 4 d . . . . . 
+. . . . d d 4 4 4 4 d . . . . . 
+. . . . d d d 4 4 d d . . . . . 
+. . . . . . d 7 d . . . . . . . 
+. . . . . . . 7 . . . . . . . . 
+. . . 8 . . . 7 . . . 8 . . . . 
+. . . . 7 8 8 7 8 8 7 . . . . . 
+. . . . . . . 7 . . . . . . . . 
+. . . . . . . 8 . . . . . . . . 
+`;
             case "image6":
-            case "meinBild4":return img`
+            case "Bäumchen":return img`
 . . . . . . . 7 7 . . . . . . . 
 . . . . . . 5 5 5 c c c . . . . 
 . . . c c c 7 5 5 5 6 7 7 . . . 
@@ -21,7 +38,7 @@ namespace myImages {
 . . . . . c f f f f c . . . . . 
 `;
             case "image2":
-            case "meinBild0":return img`
+            case "Himmel":return img`
 99999999999999999999999999999999999999999999999999999999999999999999999999999999
 99999999999999999999999999999999999999999999999999999999999999999999999999999999
 99999999999999999999999999999999999999999999999999999999999999999999999999999999
@@ -63,7 +80,7 @@ namespace myImages {
 99999999999999999999999999999999999999999999999999999999999999999999999999999999
 `;
             case "image4":
-            case "meinBild2":return img`
+            case "Wolke 1":return img`
 .............111.....................
 ............1211.....................
 ..2222......1211................122..
@@ -78,7 +95,7 @@ namespace myImages {
 .........2222221....1221.............
 `;
             case "image3":
-            case "meinBild1":return img`
+            case "Wolke 2":return img`
 . . . . . . . . . . . . . . . . . 
 . . . 2 . 2 2 . . . . . . . . . . 
 . . . . 2 1 1 1 . 1 . . . . . . . 
@@ -87,8 +104,25 @@ namespace myImages {
 . 1 1 2 2 2 2 2 1 2 2 2 . . . . . 
 . . . . . . . . . . . . . . . . . 
 `;
+            case "image5":
+            case "Wolke 3":return img`
+........2222221..............
+...22..211111112..122........
+.21111211111112....112.......
+.1111111111121112221112......
+.211111111221111111111112....
+.22.111222211111111111..2....
+....112211111112211111.......
+..21111111111112211122.12....
+..2111111111111211112.2212...
+.211222211111112211122211122.
+..22....111122112211111111122
+........22....211111122222.12
+...............1222..........
+.............................
+`;
             case "image1":
-            case "meinBild":return img`
+            case "Erdboden":return img`
 ...............................................................................................................................................................................
 ...............................................................................................................................................................................
 ...............................................................................................................................................................................
@@ -149,40 +183,6 @@ fffdffffffffffffeddfffffffffffffdfffffffffdfffffffffffefffffffffdffffffffffdffff
 fffdfffffffffefffdfffeffffffffeddddfffffffddffefffffffffffffffffffffefffffddffefffffffffddeffffeffefdddffffffeffffffefdfffffffffffdffffeffffffedffffffefdfffffffddffffffdddffff
 efffddfffffffffffdffffffefffffffffdffffffffddfffffffffefffffddfffffffffffdffffffffffffddfffffffffffddfffffffffffffffddddddfffffffdffffffffffffffffffffffdffffffedffffffdedddfff
 fffdffdfffeffffffdfffffffffffffffdffffffffffdffffffffffffffdfffffffffffffdffffffffffddffffffffffffddffeffffffffffffffffddeffffffddfffffffffffffffffffffdfffffffffddfffffffffddd
-`;
-            case "image5":
-            case "meinBild3":return img`
-........2222221..............
-...22..211111112..122........
-.21111211111112....112.......
-.1111111111121112221112......
-.211111111221111111111112....
-.22.111222211111111111..2....
-....112211111112211111.......
-..21111111111112211122.12....
-..2111111111111211112.2212...
-.211222211111112211122211122.
-..22....111122112211111111122
-........22....211111122222.12
-...............1222..........
-.............................
-`;
-            case "image7":
-            case "meinBild5":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . d d d . . . . . . . 
-. . . . . d d 4 4 d . . . . . . 
-. . . . d d 4 4 4 4 d . . . . . 
-. . . . d d 4 4 4 4 d . . . . . 
-. . . . d d 4 4 4 4 d . . . . . 
-. . . . d d d 4 4 d d . . . . . 
-. . . . . . d 7 d . . . . . . . 
-. . . . . . . 7 . . . . . . . . 
-. . . 8 . . . 7 . . . 8 . . . . 
-. . . . 7 8 8 7 8 8 7 . . . . . 
-. . . . . . . 7 . . . . . . . . 
-. . . . . . . 8 . . . . . . . . 
 `;
         }
         return null;
